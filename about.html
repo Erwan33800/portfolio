@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css">
+    
+    <title>WAN</title>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <img src="images/bg.jpg" id="bg">
+            <img src="images/moon.png" id="moon">
+            <img src="images/mountain.jpg" id="mountain">
+            <img src="images/road.jpg" id="road">
+            <h2 id="text">A propos de moi</h2>
+        </section>       
+    </div>
+    <div class="all">
+        <div class="back">
+            <a href="index.html"><img src="https://img.icons8.com/flat_round/64/000000/back--v1.png"/></a>
+        </div>
+
+        <div class="profil">
+            <h3>Mon profil</h3>
+            <div class="info_profil">
+                <img src="./images/profil.jpg" alt="">
+                <ul class="about_list">
+                        <li><span>Nom :</span>  LE PIERRES</li>
+                        <li><span>Prénom :</span>  Erwan</li>
+                        <li><span>Naissance :</span>  30/08/1995</li>
+                        <li><span>Où :</span>  à Montpellier (34)</li>
+                        <li><span>Habite :</span>  Bordeaux (33)</li>
+                        <li><span>Métier :</span>  Dévelopeur Web</li>
+                        <li><span>Téléphone :</span>  +336 10 57 94 78</li>
+                        <li><span>Mail :</span>  lepierreserwan@gmail.com</li>
+                        <li><span>Cv :</span>  <a href="pdf/ERWAN_LE_PIERRES.pdf">cliquer ici</a></li>
+                </ul>
+            </div>
+            <div class="info_past">
+                <p>Après avoir effectué beaucoup de métier dans des milieux différents manutentionnaire, recouvrement chez un huissier de justice, télévendeur etc), j'ai réalisé que je pouvais faire de ma passion mon métier. </br></br>
+
+                Depuis petit, j'affectionne particulièrement tout ce qui touche à la technologie, c'est d'ailleurs pour cela que j'ai effectué un BTS Système Numérique. Mais les débouchés ne me satisfaisaient pas, et j'ai préféré voyager et changer d'air afin de prendre en maturité. </br></br>
+
+                Et c'est donc en Septembre dernier que j'intègre une formation de dév Web et Web Mobile, en ayant au préalable acquis des connaissances grâce à OpenClassRoom, Grafikart ou encore Udemy. Je travaille donc sur HTML, CSS, PHP, JavaScript et certains de leurs frameworks.</br></br>
+
+                Grâce à mes diverses expériences, j'ai pu développer des compétences commerciales, la gestion du stress et des conflits, la relationnelle vis à vis du client. </p>
+
+            </div>
+            <div class="info_sport">
+                <h3>Le sport</h3>
+                <p>Mon père étant un ancien joueur de rugby à haut niveau, j'ai toujours baigné dans cette ambiance sportive de la compétition et du dépassement de soi. Je suis un grand pationné de sport en général. J'ai pratiqué de mes 5 ans à 16 ans le judo, avec son code moral qui embrasse l'éducation que mes parents m'ont donnés : Respect, Modestie, Contrôle de soi etc. J'ai pratiqué le judo jusqu'à l'obtention de ma ceinture noire et une grosse blessure.</br></br>Suite à cet évènement, j'ai eu envie de me remettre plus sérieusement au rugby et de retrouver mon ancien club Saint Médard en Jalles (SMRC) avec mes amis.</br> Depuis petit, je joue aussi au foot en city, ou maintenant en futsal. Je crois toujours au pouvoir du football populaire même dans ces temps de corruptions et de sommes d'argent astronomiques. Fervant supporter des Girondins de Bordeaux, je suis donc quelqu'un de fidèle malgré les années difficiles que l'on traverse depuis plus de dix ans.</p>
+                <h5>Petit florilège de moments sympatiques</h5>
+                <div class="video_sport">                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PA8_AsMn3fk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WD4Ez7Cbisc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nl4je_gIK5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                    </video>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
+    
+</body>
+</html>

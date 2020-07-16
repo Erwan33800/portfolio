@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>WAN</title>
+    <script language="javascript">
+        function changeimage(url) {
+        document.getElementById('image').src=url; //Avec l'identité
+        //Ou avec le nom : document.image.src=url;
+        }
+    </script>
+</head>
+<body style="background-color: #0a2a43;">
+    <div class="container">
+        <div class="web">
+            <div class="dev box" href="javascript:;" onMouseOver="changeimage('images/gauche.png')" onMouseOut="changeimage('images/simle.png')">
+                <div class="icon">
+                    <a href="dev.html"><i class="fa fa-code" aria-hidden="true"></i></a>
+                </div>
+                <div class="content">
+                    <h1>Développement</h1>
+                    <p>Les technologies que j'utilise, mes projets etc</p>
+                    <a href="dev.html" class="btn btn-primary destok">Lire la suite</a>
+                </div>
+                
+            </div>
+
+            <div class="internet box" href="javascript:;" onMouseOver="changeimage('images/haut.png')" onMouseOut="changeimage('images/simle.png')">
+                <div class="icon">
+                    <a href="internet.html"><i class="fa fa-wifi" aria-hidden="true"></i></a>
+                </div>
+                <div class="content">
+                    <h1>Internet</h1>
+                    <p>Tout ce qui m'attire dans l'univers d'internet</p>
+                    <a href="internet.html" class="btn btn-primary destok">Lire la suite</a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="images">
+            <img  id="image" name="image" src="images/simle.png">
+        </div>
+
+        <div class="others">
+            <div class="about box" href="javascript:;" onMouseOver="changeimage('images/bas.png')" onMouseOut="changeimage('images/simle.png')">
+                <div class="icon">
+                    <a href="about.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                </div>
+                <div class="content">
+                    <h1>Qui suis-je ?</h1>
+                    <p>Découvrir rapidement un peu plus qui je suis !</p>
+                    <a href="about.html" class="btn btn-primary destok">Lire la suite</a>
+                </div>
+            </div>
+            <div class="sport box" href="javascript:;" onMouseOver="changeimage('images/droite.png')" onMouseOut="changeimage('images/simle.png')">
+                <div class="icon">
+                    <a href="form.html"><i class="fa fa-envelope"></i></a>
+                </div>
+                <div class="content">
+                    <h1>Me contacter</h1>
+                    <p>Que ça soit par mail, ou bien par téléphone.</p>
+                    <a href="form.html" class="btn btn-primary destok">Lire la suite</a>
+                </div>
+                
+            </div>
+        </div> 
+    </div>
+
+    <script type="text/javascript" src="js/function.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
