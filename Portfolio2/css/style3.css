@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #0a2a43;
+    min-height: 1500px;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a2a43, transparent);
+    z-index: 10000;
+}
+section:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  #0a2a43;
+    z-index: 10000;
+    mix-blend-mode: color;
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#text{
+    position: relative;
+    color: #fff;
+    font-size: 10em;
+    z-index: 1;
+}
+#road{
+    z-index: 2;
+}
+.all{
+    padding-top: 30px;
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+}
+.back{
+    padding-bottom: 30px;
+}
+
+/** DEV **/
+
+.projet{
+    margin-top: 80px;
+    text-align: center;
+}
+.box_projet{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.mycave{
+    width: 30%;
+    background-color: #244964;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 10%;
+}
+.mycave img{
+    height: 50px;
+}
+.mycave p{
+    font-size: .9em;
+    margin: 10px;
+}
+
+/** ABOUT ME **/
+
+.profil h3{
+    text-align: center;
+    font-size: 1.5em;
+}
+.info_profil{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.about_list{
+    padding: 15px;
+}
+.about_list li span{
+    font-weight: bold;
+}
+.info_sport{
+    margin-top: 100px;
+}
+.info_sport p {
+    margin-top: 30px;
+}
+h5{
+    font-size: 1em;
+    margin-top: 50px;
+}
+.video_sport{
+    margin-top: 20px;
+}
+
+/** FORM **/
